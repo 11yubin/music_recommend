@@ -1,0 +1,16 @@
+{
+    "name": "yubin/expo",
+    "description": "2023 산학협력 EXPO 숙명여대 데이터 서포터즈",
+    "autoload": {
+        "psr-4": {
+            "Yubin\\Expo\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "11yubin",
+            "email": "11yubine@gmail.com"
+        }
+    ],
+    "require": {}
+}
