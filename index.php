@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>음악 추천 시스템</title>
     <link rel="stylesheet" type="text/css" href="styles.css"> <!-- CSS 파일 링크 -->
+    <link rel="shortcut icon" href="favicon-32x32.png" />
 </head>
 <body>
 <div class="menu-container">
