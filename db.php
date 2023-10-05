@@ -1,6 +1,6 @@
 <?php
 // 데이터베이스 연결 설정
-$host = "3.81.172.132"; // 데이터베이스 호스트 주소
+$host = "3.81.1.207"; // 데이터베이스 호스트 주소
 $username = "user"; // 데이터베이스 사용자 이름
 $password = "supporters2023!"; // 데이터베이스 암호
 $database = "music"; // 데이터베이스 이름
@@ -19,7 +19,7 @@ if (isset($_GET['theme'])) {
 
     // 데이터베이스에서 선택한 테마에 따른 음악 정보를 가져오는 쿼리를 작성
     // $query = "SELECT image, title, artist, url FROM music WHERE tag = '$selectedTheme' ORDER BY RAND() LIMIT 10";
-    $query = "SELECT image, title, artist, url FROM music WHERE artist = '$selectedTheme' ORDER BY RAND() LIMIT 10";
+    $query = "SELECT image, title, artist, url FROM music WHERE tag LIKE '%$selectedTheme%' ORDER BY RAND() LIMIT 10";
     
     $result = mysqli_query($con, $query);
     

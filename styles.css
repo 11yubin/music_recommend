@@ -1,11 +1,17 @@
 @font-face {
-    font-family: 'GmarketSansMedium';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
-    font-weight: normal;
+    font-family: 'paybooc-light';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/paybooc-Bold.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'paybooc-bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/paybooc-Bold.woff') format('woff');
+    font-weight: 800;
     font-style: normal;
 }
 body {
-    font-family: 'GmarketSansMedium';
+    font-family: 'paybooc-light';
     background-color: #111111; /* 배경 */
     margin: 0;
     padding: 0;
@@ -53,7 +59,7 @@ h1 img {
 }
 
 input, button, select {
-    font-family: 'GmarketSansMedium';
+    font-family: 'paybooc-bold';
     font-size: 16pt;
     margin: 5px;
     padding: 5px
@@ -74,7 +80,6 @@ button:hover {
 }
 
 select {
-    width : 150px;
     height: 50px;
 
 }
