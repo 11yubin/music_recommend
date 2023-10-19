@@ -12,10 +12,10 @@ document.addEventListener('DOMContentLoaded', function () {
     else if (sum > 100) selectedTheme = "사랑";
     else if (sum > 50) selectedTheme = "꿈";
     else if (sum > 0) selectedTheme = "산책";
-    else if (sum > -50) selectedTheme = "위로";
-    else if (sum > -100) selectedTheme = "밤";
-    else if (sum > -150) selectedTheme = "이별";
-    else selectedTheme = "산책";
+    else if (sum > -50) selectedTheme = "눈";
+    else if (sum > -100) selectedTheme = "위로";
+    else if (sum > -150) selectedTheme = "밤";
+    else selectedTheme = "이별";
     
 
     // 초기 추천 리스트 표시 함수 호출
