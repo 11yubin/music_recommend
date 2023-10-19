@@ -91,6 +91,7 @@
 
 <!-- JavaScript 파일 연결 -->
 <script src="scripts.js"></script>
+<script src="slider.js"></script>
 </body>
 </html>
 
