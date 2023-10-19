@@ -2,6 +2,6 @@
 
 <hr>
 
-https://music-recommend-50e86ee21110.herokuapp.com/
+http://nityzhudrs.us19.qoddiapp.com/
 
 - readme 추후 추가 예정
