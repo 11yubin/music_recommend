@@ -230,11 +230,11 @@ font-size: 20px;
   
   /* Value input range */
   .range__value {
-    width: 39px;
-    height: 39px;
+    width: 50px;
+    height: 45px;
     background: var(--gradient-color);
     position: absolute;
-    top: -39px;
+    top: -50px;
     left: -5px;
     border-radius: 2rem 2rem 2rem .25rem;
     transform: rotate(-45deg);
