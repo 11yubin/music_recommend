@@ -15,27 +15,72 @@
     <hr>
     <h3>Find Your Music Taste</h3>
     <br>
-    <!-- 선택 옵션과 버튼 -->
+
+    <div class="container">
+    <p>행복</p>
+         <div class="range">
+            <div class="range__content">
+               <div class="range__slider">
+                  <div class="range__slider-line"" id="range-line-1""></div>
+               </div>
+               
+               <div class="range__thumb" id="range-thumb-1">
+                  <div class="range__value">
+                     <span class="range__value-number" id="range-number-1">50</span>
+                  </div>
+               </div>
+   
+                <input type="range" class="range__input" id="range-input-1" min="0" max="100" value="50" step="1">
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <p>차분</p>
+            <div class="range">
+                <div class="range__content">
+                <div class="range__slider">
+                    <div class="range__slider-line" id="range-line-2"></div>
+                </div>
+                
+                <div class="range__thumb" id="range-thumb-2">
+                    <div class="range__value">
+                        <span class="range__value-number" id="range-number-2">50</span>
+                    </div>
+                </div>
+    
+                    <input type="range" class="range__input" id="range-input-2" min="0" max="100" value="50" step="1">
+                </div>
+            </div>
+    </div>
+
+    <div class="container">
+    <p>센치</p>
+
+         <div class="range">
+            <div class="range__content">
+               <div class="range__slider">
+                  <div class="range__slider-line" id="range-line-3"></div>
+               </div>
+               
+               <div class="range__thumb" id="range-thumb-3">
+                  <div class="range__value">
+                     <span class="range__value-number" id="range-number-3">50</span>
+                  </div>
+               </div>
+   
+                <input type="range" class="range__input" id="range-input-3" min="0" max="100" value="50" step="1">
+            </div>
+        </div>
+    </div>
+
     <form id="themeForm">
-        <select id="themeSelect" name="theme">
-            <option value="위로">위로가 필요할 때</option>
-            <option value="에너지">에너지를 내고 싶을 때</option>
-            <option value="여행">여행에 가는 길!</option>
-            <option value="산책">가벼운 산책을 할 때</option>
-            <option value="밤">센치한 새벽, 자기 전 감성</option>
-            <option value="신남">기분이 날아갈 것 같을 때</option>
-            <option value="눈">눈이 내리는 날</option>
-            <option value="이별">이별했을 때</option>
-            <option value="꿈">꿈과 희망에 가득찰 때</option>
-            <option value="사랑">설레는 사랑을 시작할 때</option>
-        </select>
         <button type="submit">음악 추천 받기</button>
-    </form>
+</form>
 
     <!-- 음악 목록 표시 -->
     <div id="musicList">
         <ul>
-
             <br>
             <table hidden id="musicTable">
             </table>

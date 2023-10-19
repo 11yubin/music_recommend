@@ -31,25 +31,29 @@ hr {
     margin: 20px auto;
 }
 
+p {
+    font-size: 40px;
+    color: #CCCCCC; /* 소개글 */
+    margin-right:10%;
+    margin-top:0;
+    margin-bottom:0;
+}
+
 .menu-container {
     display: flex;
     justify-content: flex-end;
     background-color: #222; /* 메뉴 배경색 */
-    padding: 10px 0;
 }
 
 .menu-container a {
     text-decoration: none;
     color: #CCC; /* 흰색 */
     font-size: 20px;
-    margin: 0 15px;
-    padding: 10px 15px;
 }
 
 /* 추가 스타일 */
 .container {
-    background-color: #fff; /* 흰색 */
-    padding: 20px;
+    background-color: #111111; /* 배경 */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px; /* 곡선 테두리 */
 }
@@ -154,3 +158,115 @@ font-size: 20px;
     height: 20px; 
     align-content: left;
 }
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+    /*========== Colors ==========*/
+    /*Color mode HSL(hue, saturation, lightness)*/
+    --gradient-color: linear-gradient(95deg,
+                    hsl(24, 83%, 65%) -7%,
+                    hsl(27, 97%, 48%) 112%);
+    --first-color-light: hsl(38, 72%, 79%);
+    --first-color-lighten: hsl(256, 58%, 94%);
+    --white-color: hsl(0, 0%, 100%);
+    --body-color: hsl(256, 100%, 98%);
+  
+    --h1-font-size: 1.5rem;
+  }
+    
+  /*=============== RANGE SLIDER ===============*/
+  .container {
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+    align-items:center;
+  }
+  
+  /* Custom input range */
+  .range {
+    height: 64px;
+    width: 100%;
+    max-width: 332px;
+    background-color: var(--first-color-light);
+    border-radius: 4rem;
+    box-shadow: 0 6px 16px hsla(256, 72%, 24%, .15);
+    display: grid;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  
+  .range__content {
+    position: relative;
+    width: 100%;
+    display: grid;
+    place-items: center;
+  }
+  
+  .range__slider {
+    width: 100%;
+    height: 16px;
+    background-color: var(--first-color-lighten);
+    border-radius: 4rem;
+    box-shadow: 0 4px 12px hsla(256, 72%, 24%, .2);
+    overflow: hidden;
+  }
+  
+  .range__slider-line {
+    float:left;
+    width: 100%;
+    height: 100%;
+    background: var(--gradient-color);
+    width: 0;
+  }
+  
+  .range__thumb {
+    width: 32px;
+    height: 32px;
+    background-color: var(--first-color-lighten);
+    border-radius: 50%;
+    box-shadow: 0 0 12px hsla(256, 72%, 24%, .2);
+    position: absolute;
+  }
+  
+  /* Value input range */
+  .range__value {
+    width: 39px;
+    height: 39px;
+    background: var(--gradient-color);
+    position: absolute;
+    top: -39px;
+    left: -5px;
+    border-radius: 2rem 2rem 2rem .25rem;
+    transform: rotate(-45deg);
+    display: grid;
+    place-items: center;
+  }
+  
+  .range__value-number {
+    transform: rotate(45deg);
+    color: var(--white-color);
+    font-size: var(--h1-font-size);
+  }
+  
+  /* Default input range */
+  .range__input {
+    appearance: none;
+    width: 100%;
+    height: 16px;
+    position: absolute;
+    opacity: 0;
+  }
+  
+  .range__input::-webkit-slider-thumb {
+    appearance: none;
+    width: 32px;
+    height: 32px;
+  }
+  
+  .range__input::-webkit-slider-thumb:hover {
+    cursor: pointer;
+  }
+
+  .inline {
+    display:inline;
+  }
