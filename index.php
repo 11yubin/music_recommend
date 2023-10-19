@@ -90,8 +90,8 @@
 </center>
 
 <!-- JavaScript 파일 연결 -->
-<script src="scripts.js"></script>
-<script src="slider.js"></script>
+<script src="scripts.js?ver=1"></script>
+<script src="slider.js?ver=1"></script>
 </body>
 </html>
 
