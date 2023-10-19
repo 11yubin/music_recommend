@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const happy = document.getElementById('range-input-1').value*3 + 50,
+    const happy = document.getElementById('range-input-1').value*2 + 50,
     calm = document.getElementById('range-input-2').value - 50,
-    sent = -document.getElementById('range-input-3').value*2 - 150
+    sent = -document.getElementById('range-input-3').value - 150
     const musicListTable = document.querySelector('#musicList table');
     const sum = happy + calm + sent;
     var selectedTheme = "";
@@ -12,9 +12,9 @@ document.addEventListener('DOMContentLoaded', function () {
     else if (sum > 100) selectedTheme = "사랑";
     else if (sum > 50) selectedTheme = "꿈";
     else if (sum > 0) selectedTheme = "산책";
-    else if (sum > -100) selectedTheme = "위로";
-    else if (sum > -200) selectedTheme = "밤";
-    else if (sum > -250) selectedTheme = "이별";
+    else if (sum > -50) selectedTheme = "위로";
+    else if (sum > -100) selectedTheme = "밤";
+    else if (sum > -150) selectedTheme = "이별";
     else selectedTheme = "산책";
     
 
