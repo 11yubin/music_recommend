@@ -21,7 +21,7 @@
          <div class="range">
             <div class="range__content">
                <div class="range__slider">
-                  <div class="range__slider-line"" id="range-line-1""></div>
+                  <div class="range__slider-line" id="range-line-1"></div>
                </div>
                
                <div class="range__thumb" id="range-thumb-1">
